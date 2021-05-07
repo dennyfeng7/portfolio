@@ -45,6 +45,10 @@ with custom properties, whenever we alter the screen size by making it smaller, 
 
 /* General Styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--clr-light);
   color: var(--clr-dark);
@@ -64,10 +68,10 @@ strong {
 }
 
 /* Only displays when you tab into it, not when you hover over it (hover taken care of in hover state) */
-:focus {
+/* :focus {
   outline: 3px solid var(--clr-accent);
   outline-offset: 3px;
-}
+} */
 
 /* Buttons */
 .btn {
@@ -202,6 +206,26 @@ header {
   z-index: 1000;
 }
 
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
 /* Hamburger */
 
 .hamburger {
@@ -212,7 +236,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: var(--clr-dark);
+  background: var(--clr-accent);
   width: 2em;
   height: 3px;
   border-radius: 1em;
