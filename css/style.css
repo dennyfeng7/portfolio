@@ -396,14 +396,14 @@ header {
   }
 }
 
-/* My Work */
-.my-work {
+/* My project */
+.my-project {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
 }
 
-.section__subtitle--work {
+.section__subtitle--project {
   color: var(--clr-accent);
   font-weight: var(--fw-bold);
   margin-bottom: 2em;

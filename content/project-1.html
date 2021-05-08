@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- initial-scale helps with the view on mobile device, so it wont look like desktop version -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project One - Denny's Portfolio Site</title>
+        <!-- Normalize (CSS File that evens out differences between each browser, makes website work the same in all browsers) -->
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <!-- connect css -->
+        <link rel="stylesheet" href="../css/style.css"
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="../photos/signature-logo.png" alt="">
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#project" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <!-- Introduction -->
+    <!-- id="home" brings you back to #home -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        Welcome to <strong>Project One</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">python</p>
+      <img src="../photos/portfolio1.png"" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+      <p></p>
+      <img src="../photos/portfolio1.png" alt="">
+      <p>This is a temporary placeholder for the project description.</p>
+    </div>
+    
+
+        <!-- Footer -->
+        <footer class="footer">
+          <a href="mailto:dennyfeng7@gmail.com" class="footer__link">Contact</a>
+          <ul class="social-list">
+              <li class="social-list__item">
+                  <a class="social-list__link" href="mailto:dennyfeng7@gmail.com">
+                      <i class="fas fa-envelope"></i>
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a class="social-list__link" href="https://linkedin.com/in/dennyfeng7" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a class="social-list__link" href="https://github.com/dennyfeng7" target="_blank">
+                      <i class="fab fa-github"></i>
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a class="social-list__link" href="https://instagram.com/denny.feng" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+              </li>
+              <li class="social-list__item">
+                  <a class="social-list__link" href="https://drive.google.com/file/d/1hpOXRyM3NX_zlKSaA3bju1DJymbQDzre/view?usp=sharing" target="_blank">
+                      <i class="far fa-file"></i>
+                  </a>
+              </li>
+          </ul>
+
+          <!--Create another group for other links -->
+
+      </footer>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
