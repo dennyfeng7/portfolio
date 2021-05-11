@@ -265,9 +265,9 @@ header {
   position: relative;
 }
 
-.intro__img {
+/* .intro__img {
   box-shadow: var(--bs);
-}
+} */
 
 /* makes the swe dev title bar small when in small window sizes */
 .section__subtitle--intro {
